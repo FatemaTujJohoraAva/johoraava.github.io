@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <!-- <title>Portfolio - Kelly Bootstrap Template</title> -->
+  <!-- <title>Projects - Kelly Bootstrap Template</title> -->
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="portfolio-page">
+<body class="Projects-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -53,8 +53,8 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="Skills.html">Skills</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="Projects.html" class="active">Projects</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -70,164 +70,239 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/johora.ava22" target="_blank">
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+     <a href="https://www.instagram.com/johora_ava" target="_blank">
+          <i  class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+         <a href="https://www.linkedin.com/in/fatema-tuj-johora-50000b324/" target="_blank">
+              <i  class="bi bi-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/JohoraAva" target="_blank">
+              <i  class="bi bi-github" aria-hidden="true"></i>
+            </a>
       </div>
 
     </div>
   </header>
 
   <main class="main">
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <style>
+      .Projects-info {
+        padding: 30px;
+        background-color: #ccd1d400;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* <-- static shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      }
+    
+      .Projects-info:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* <-- deeper shadow on hover */
+        background-color: rgba(204, 209, 212, 0.3);
+        cursor: pointer;
+      }
+    </style>
+    
+    
+    <section id="Projects" class="Projects section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <h2>Projects</h2>
       </div>
+    
+      <div class="container">
+        <div class="row gy-4">
+    
+          <!-- Project 1 -->
+          <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://github.com/JohoraAva/CSE-108-Object-Oriented-Programming-Language-/tree/main/Term%20Project-2/1905022">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">Football Player Database System</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                Solo project for CSE-108. Manages players, clubs, and transfers using JavaFX and a server-client model.
+              </p> </a>
+            </div>
+          </div>
 
-    </section><!-- /Portfolio Section -->
+          <!-- project 2 -->
+          <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://github.com/JohoraAva/Sherlocks-Eye-Project-2-2">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">Sherlock's Eye</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                Two-person project for CSE-216: A Case Management System with real-time tracking and secure communication, built using Node.js and HTML/CSS.
+              </p> </a>
+            </div>
+          </div>
+    
+          <!-- Project 3-->
+          <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://youtu.be/O2aVEYXrsXY?si=5vfjqRPYSswEIqL-">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">Securus Domas</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                <b>Automated Home and Security system</b>developed in CSE-316 with features like Bluetooth-controlled access, gas/flame alerts via Telegram, intruder detection, and automated water, plant, and window systems.
+              </p> </a>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://github.com/risenfromashes/pixelshare">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">PixelShare</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                Three-person CSE-408 project: A Svelte-based media-sharing platform with group uploads and efficient tag-based search using the CLIP model.
+              </p> </a>
+            </div>
+          </div>
+    
+          <!-- Project 5 -->
+          <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://github.com/risenfromashes/pixelshare">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">Kidney Anomaly Detection Using Deep Learning Model</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                Two-person CSE-472 project: Developed a deep learning system to detect kidney anomalies by merging predictions from multiple models for enhanced accuracy.
+              </p> </a>
+            </div>
+          </div>
+
+
+           <!-- Project 6 -->
+           <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://github.com/JohoraAva/CSE-406-Computer-Security-Sessional/tree/main/Velociraptor(Project%20Report)">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">Velociraptor Analysis</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                Conducted an in-depth exploration of the Velociraptor tool, analyzing its key features and compiling a comprehensive report based on the findings.
+              </p> </a>
+            </div>
+          </div>
+
+           <!-- Project 7-->
+           <div class="container" style="width: 33.33%; height: auto; color: white; padding: 5px;">
+            <div class="Projects-info" style="
+              padding: 30px;
+              background-color: #ccd1d400;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              text-align: center;
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            ">
+            <a href="https://github.com/JohoraAva/CSE-310-Compiler-Sessional">
+              <h3 style="margin-bottom: 10px; color: rgba(0, 0, 0, 0.629);">Compiler Design</h3>
+              <p style="margin-bottom: 5px; color: black;">
+                Developed a partial compiler for the C programming language using C++. Utilized Lex and Yacc for lexical analysis and parsing, and created the backend to generate assembly code for the Intel 8086 architecture.
+            </p> </a>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </section>
+    
 
   </main>
 
   <footer id="footer" class="footer light-background">
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
-      </div>
+      </div> -->
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        <a href="https://www.facebook.com/johora.ava22" target="_blank">
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+     <a href="https://www.instagram.com/johora_ava" target="_blank">
+          <i  class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+         <a href="https://www.linkedin.com/in/fatema-tuj-johora-50000b324/" target="_blank">
+              <i  class="bi bi-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/JohoraAva" target="_blank">
+              <i  class="bi bi-github" aria-hidden="true"></i>
+            </a>
       </div>
     </div>
 
