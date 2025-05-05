@@ -105,36 +105,44 @@
           <div class="col-lg-6" style="margin-left: auto; margin-right: 1%;">
           <!-- <div class="col-lg-8"> -->
             <h2 style="font-size: 54px; font-weight: 700; color: #fff">Fatema Tuj Johora</h2>
-            <!-- <p style=" color: #ffffffb4;
-            font-size: 20px;
-            font-weight: 300;
-            margin: 30px 0 60px;
-            letter-spacing: 1px;">
-            Assalamu Alaikum,
-            I'm Fatema Tuj Johora, but you can call me Ava. 
-            <!-- I'm a recent graduate from Bangladesh University of Engineering and Technology (BUET).
-            Currently, I'm working as a Software Engineer at Synesis IT PLC.             -->
-            </p> -->
             <p style=" color: #ffffff67;
             font-size: 18px;
             font-weight: 350;
             margin: 30px 0 60px;
             letter-spacing: 1px;">
             A happy soul with a curious mind, always diving into problem-solving, making friends along the way, and embracing challenges with hard work and punctuality.  </p>
-            <p style=" color: #25b4ece7;
-            font-size: 18px;
-            font-weight: 350;
-            margin: 30px 0 60px;
-            letter-spacing: 1px;">
-              <i><b>
-              Welcome to my journey of creation and growth.....</b></i>
+            <p class="typing-text">
+              <i>Welcome to my journey of creation and growth.....</i>
             </p>
+            
             <style>
-              p:hover {
-            transform: scale(1.02);  /* Slightly enlarge the text */
+            .typing-text {
+              color: #e780ebea;
+              font-size: 18px;
+              font-weight: 350;
+              margin: 30px 0 60px;
+              letter-spacing: 1px;
+              white-space: nowrap;
+              overflow: hidden;
+              border-right: 2px solid #d338d8e7;
+              width: 0;
+              animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite;
             }
 
+            p:hover {
+            transform: scale(1.02);  /* Slightly enlarge the text */
+            }
+            
+            @keyframes typing {
+              from { width: 0 }
+              to { width: 45ch }
+            }
+            
+            @keyframes blink {
+              50% { border-color: transparent }
+            }
             </style>
+            
             <a href="about.html" style=" color: var(--contrast-color);
             background: var(--accent-color);
             font-family: var(--heading-font);

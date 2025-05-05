@@ -1377,6 +1377,7 @@ section,
   left: 12px;
   right: 12px;
   bottom: -100%;
+  height: auto;
   z-index: 3;
   transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--surface-color), transparent 10%);
