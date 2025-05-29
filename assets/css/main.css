@@ -1464,49 +1464,67 @@ section,
   }
 /* Calendar Section */
   .calendar {
-      max-width: 400px;
-      margin: 0 auto;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    select, button {
-      padding: 5px 10px;
-      font-size: 16px;
-    }
-
-    .calendar-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 5px;
-      margin-top: 10px;
-    }
-
-    .day-name {
-      font-weight: bold;
-      background: #f0f0f0;
-      padding: 5px 0;
-    }
-
-    .day {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin: 2px;
-  border-radius: 4px;
-  user-select: none;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar-header select,
+.calendar-header button {
+  flex: 1 1 100px; /* allow selects/buttons to shrink or grow */
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  overflow-x: auto; /* adds horizontal scroll if needed */
+}
+
+.day-name, .day {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+/* Make font smaller on small screens */
+@media (max-width: 480px) {
+  .calendar-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+ .calendar-header select {
+  flex: 1 1 auto;
+  min-width: 100px;
+}
+
+.calendar-header button {
+  flex: 0 0 70px; /* fixed width */
+  min-width: 70px;
+  max-width: 70px;
+}
+  .day-name, .day {
+    font-size: 12px;
+    padding: 8px 5px;
+  }
+}
+
 /* .tooltip {
   position: relative;
 }
