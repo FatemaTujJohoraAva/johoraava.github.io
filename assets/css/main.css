@@ -1422,6 +1422,47 @@ section,
   opacity: 1;
   bottom: 0;
 }
+/* news details section */
+ .news-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  }
+
+  .news-section h2 {
+    margin-bottom: 15px;
+    color: #0a2463;
+    font-weight: 700;
+  }
+
+  .news-item {
+    margin-bottom: 15px;
+  }
+
+  .news-date {
+    font-weight: 600;
+    color: #0a2463;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .news-text {
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .news-item:hover,
+  .news-text:hover,
+  .news-date:hover {
+    background: none;
+    color: inherit;
+    box-shadow: none;
+    transform: none;
+    cursor: default;
+    text-decoration: none;
+  }
+
 
 /*--------------------------------------------------------------
 # Projects Details Section
